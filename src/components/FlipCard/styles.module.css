@@ -1,0 +1,76 @@
+.container {
+  position: relative;
+  aspect-ratio: 1/1.4;
+  perspective: 700px;
+  cursor: pointer;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 600ms ease;
+}
+
+.card.flipped {
+  transform: rotateY(-180deg);
+}
+
+.cardFront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardFront img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardBack img {
+  display: block;
+  width: 150%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hoverGlow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  border-radius: 50px;
+  z-index: -1;
+  filter: blur(20px);
+  opacity: 0;
+  transition: all 300ms ease;
+}
+
+.container:hover .hoverGlow {
+  opacity: 1;
+}
+
+.hoverGlow.glowActive {
+  opacity: 1;
+}

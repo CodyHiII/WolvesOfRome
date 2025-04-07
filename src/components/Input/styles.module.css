@@ -1,0 +1,89 @@
+.inputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: var(--secondary-font);
+  color: var(--text-color);
+  background-color: var(--gray-6);
+  border-radius: 10px;
+  border: 1px solid var(--gray-5);
+}
+
+.inputContainer label {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.inputContainer .input {
+  width: 100%;
+  background: var(--mid-gray);
+  border: 1px solid var(--dark-gray);
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+}
+
+.inputContainer .input input {
+  width: 100%;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 15px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--text-color);
+}
+
+.inputContainer .input input:focus {
+  outline: 1px solid var(--primary);
+  background: none;
+}
+
+.inputContainer .input input:-webkit-autofill,
+.inputContainer .input input:-webkit-autofill:hover,
+.inputContainer .input input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 0px var(--primary) !important;
+  -webkit-text-fill-color: var(--primary) !important;
+  -webkit-background-color: var(--primary) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.inputContainer .input button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  padding: 12px;
+  cursor: pointer;
+  height: 100%;
+  color: var(--darker-gray);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 200ms ease;
+}
+
+.inputContainer .input button:hover {
+  color: var(--primary);
+}
+
+.inputContainer .input button:focus {
+  outline: 1px solid var(--primary);
+  border-radius: 10px;
+  border: 1px solid var(--gray-5);
+  background: var(--gray-6);
+  color: var(--text-color);
+}
+
+.inputContainer input:focus {
+  outline: 1px solid var(--primary);
+  background: var(--normal-hover);
+}

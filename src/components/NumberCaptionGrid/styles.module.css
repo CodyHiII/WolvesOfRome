@@ -1,0 +1,25 @@
+.cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  width: min-content;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--dark-red);
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--dark-red);
+}

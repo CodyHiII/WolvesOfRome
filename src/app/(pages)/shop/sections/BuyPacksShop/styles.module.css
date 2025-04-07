@@ -1,0 +1,27 @@
+.buyPacksContainer {
+  width: 100%;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  padding: 30px 0;
+  border-radius: 20px;
+  background: var(--normal);
+}
+
+.heading h1 {
+  font-size: 40px;
+}
+
+.heading p {
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  font-weight: 400;
+  max-width: 600px;
+  text-align: center;
+}

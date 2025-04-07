@@ -1,0 +1,52 @@
+.container {
+  background-color: var(--normal);
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.cardTitle {
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--gray-5);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (min-width: 501px) {
+  .selectExpansionNav {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .buyPacksContainer {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .content {
+    flex-direction: row;
+  }
+
+  .tabs {
+    flex: 0 0 35%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .tabs {
+    flex: 0 0 40%;
+  }
+}

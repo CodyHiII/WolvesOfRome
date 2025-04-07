@@ -1,0 +1,228 @@
+.default {
+  --color: white;
+  --padding: 12px 32px;
+  --border: none;
+  --border-radius: 100px;
+  --font-size: 16px;
+  --font-weight: 700;
+  --line-height: 150%;
+  --font-family: var(--secondary-font);
+  --background: var(--primary);
+  --box-shadow: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  color: var(--color);
+  background: var(--background);
+  padding: var(--padding);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  font-family: var(--font-family);
+  box-shadow: var(--box-shadow);
+
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.default:hover {
+  opacity: 0.5;
+}
+
+.disabled {
+  filter: grayscale(100%);
+  pointer-events: none;
+}
+
+.primary {
+  --background: var(--primary);
+  --box-shadow: 5px 5px 10px 0px rgba(212, 106, 106, 0.25),
+    -5px -5px 10px 0px #d5321b inset, 2px 2px 6px 0px #ffd8ab inset;
+}
+
+.secondary {
+  --background: var(--secondary);
+  --box-shadow: none;
+  --border-radius: 10px;
+  --color: var(--text-color);
+}
+
+.danger {
+  --background: var(--danger);
+  --box-shadow: 5px 5px 10px 0px rgba(212, 106, 106, 0.25),
+    -5px -5px 10px 0px #c81515 inset, 2px 2px 6px 0px #ffabab inset;
+}
+
+.success {
+  --background: #009605;
+  --box-shadow: 5px 5px 10px 0px rgba(118, 212, 106, 0.25),
+    -5px -5px 10px 0px #005403 inset, 2px 2px 6px 0px #c1ffab inset;
+}
+
+.ternary {
+  position: relative;
+  --background: var(--primary);
+  height: max-content;
+  margin-right: 20px;
+  border-radius: 10px 20px 10px 20px;
+  transform: skew(-20deg);
+  font-family: var(--quaternary-font);
+  --_sideElementWidth: 8px;
+  --_sideElementBackground: var(--background);
+  --_sideElementRight: -13px;
+}
+
+.ternary span {
+  transform: skew(20deg);
+}
+
+.ternary::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: var(--_sideElementRight);
+  width: var(--_sideElementWidth);
+  height: 80%;
+  padding: 15px 0;
+  border-radius: 5px 20px 10px 5px;
+  background: var(--_sideElementBackground);
+  transition: all 200ms ease;
+}
+
+.ternary:hover {
+  opacity: 1;
+  scale: 0.95;
+}
+
+.ternary:hover::before {
+  height: 50%;
+}
+
+.quaternary {
+  --border-radius: 10px 20px 10px 20px;
+  transform: skew(-15deg);
+}
+
+.quaternary:hover {
+  opacity: 1;
+  background: var(--primary-400);
+}
+
+.quaternary-secondary {
+  --border-radius: 10px 20px 10px 20px;
+  transform: skew(-15deg);
+  background: none;
+  border: none;
+}
+
+.quaternary-secondary:hover {
+  opacity: 1;
+  background: var(--primary);
+}
+
+.quaternary-ternary {
+  --border-radius: 10px 20px 10px 20px;
+  transform: skew(-15deg);
+  background: none;
+  border: 1px solid var(--primary);
+}
+
+.quaternary-ternary:hover {
+  opacity: 1;
+  background: var(--primary);
+}
+
+.quinary {
+  --border: 1px solid var(--gray-5);
+  --background: var(--gray-6);
+  --border-radius: 10px;
+}
+
+.quinary-secondary {
+  --border: 1px solid var(--secondary);
+  --background: var(--secondary);
+  --border-radius: 10px;
+}
+
+.quinary:hover {
+  opacity: 1;
+  background: var(--primary);
+}
+
+.quinary-secondary:hover {
+  opacity: 1;
+  --border: 1px solid var(--primary);
+  background: var(--primary);
+}
+
+.xs {
+  --padding: 10px 20px;
+  --font-size: 11px;
+}
+
+.sm {
+  --padding: 12px 22px;
+  --font-size: 14px;
+}
+
+.md {
+  --padding: 12px 32px;
+  --font-size: 16px;
+}
+
+.lg {
+  --padding: 12px 60px;
+  --font-size: 16px;
+}
+
+.xl {
+  --padding: 12px 140px;
+  --font-size: 16px;
+}
+
+.xxl {
+  --padding: 12px 100px;
+  --font-size: 36px;
+}
+
+.secondary-md {
+  --padding: 10px 20px;
+  --font-size: 24px;
+}
+
+.ternary.md {
+  --padding: 15px 15px 15px 20px;
+  --font-size: 16px;
+}
+
+.ternary.lg {
+  --padding: 15px 15px 15px 20px;
+  --font-size: 25px;
+}
+
+.ternary.xl {
+  --padding: 20px 20px 20px 30px;
+  --font-size: 39px;
+  --_sideElementWidth: 10px;
+  --_sideElementRight: -18px;
+}
+
+.quinary.md {
+  --padding: 10px 0;
+  --font-size: 16px;
+  --font-weight: 600;
+  --font-family: var(--ternary-font);
+}
+
+.quinary-secondary.md {
+  --padding: 10px 0;
+  --font-size: 16px;
+  --font-weight: 600;
+  --font-family: var(--ternary-font);
+}

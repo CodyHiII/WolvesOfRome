@@ -1,0 +1,109 @@
+.packContainer {
+  position: relative;
+  background: #2e2e2e80;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  padding-bottom: 10px;
+  color: var(--text-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  box-shadow: 0 0 0 2px #ff791880;
+  transition: all 400ms ease;
+}
+
+.packContainer:hover {
+  box-shadow: 0 0 0 2px #ff7918;
+}
+
+.packInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.gloriumImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  background: radial-gradient(
+    98.58% 85.93% at 88.47% 83.83%,
+    #312783 20%,
+    #312783 46.83%,
+    #222 89.69%
+  );
+  transition: all 400ms ease;
+}
+
+.gloriumImageContainer img {
+  width: 80%;
+  object-fit: contain;
+  margin: 0 auto;
+  transition: all 400ms ease;
+}
+
+.packContainer:hover {
+  transform: translateY(-20px) scale(0.95);
+}
+
+.packContainer:hover .gloriumImageContainer img {
+  transform: scale(1.2) translateY(-20px);
+}
+
+.totalPrice {
+  font-size: 24px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.gloriumContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.glorium {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.bonusGlorium {
+  font-size: 16px;
+  color: var(--primary-400);
+}
+
+.packPrice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--secondary-font);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 100%;
+  padding-top: 4px;
+  margin-left: -4px;
+}
+
+.currency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

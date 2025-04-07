@@ -1,0 +1,29 @@
+.button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  background-color: var(--normal);
+  border: none;
+  border-radius: 15px 15px 0 0;
+  color: var(--text-color);
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--normal-hover);
+}
+
+.error {
+  width: 100%;
+  font-size: 14px;
+  font-family: var(--secondary-font);
+  text-align: center;
+  color: var(--danger);
+}

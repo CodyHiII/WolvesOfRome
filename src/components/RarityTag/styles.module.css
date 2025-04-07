@@ -1,0 +1,48 @@
+.tag {
+  --_background: var(--dark-hover);
+  --_color: var(--text-color);
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  min-width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 8px 0 8px;
+  background: var(--_background);
+  color: var(--_color);
+}
+
+.Common {
+  --_background: var(--rarity-common);
+}
+
+.Rare {
+  --_background: var(--rarity-rare);
+}
+
+.Epic {
+  --_background: var(--rarity-epic);
+}
+
+.Legendary {
+  --_background: var(--rarity-legendary);
+}
+
+.Divine {
+  --_background: var(--rarity-divine);
+}
+
+.Bronze {
+  --_background: var(--rarity-bronze);
+  --_color: var(--dark-hover);
+}
+
+.Silver {
+  --_background: var(--rarity-silver);
+  --_color: var(--dark-hover);
+}
+
+.Gold {
+  --_background: var(--rarity-gold);
+  --_color: var(--dark-hover);
+}

@@ -1,0 +1,258 @@
+.nav {
+  position: fixed;
+  width: 90%;
+  max-width: 1500px;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 10px;
+  padding: 10px 30px;
+  border: 1px solid var(--Grey-gray-4, #565656);
+  background: rgba(39, 39, 39, 0.5);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 998;
+}
+
+.logoContainer img {
+  width: 60px;
+}
+
+.navContent {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.navButton {
+  border: none;
+  background: var(--primary);
+  width: 45px;
+  height: 45px;
+  color: white;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+.authButtonsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.sideMenuContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding-right: 3px;
+  top: 0;
+  right: 0;
+  border-left: 1px solid var(--Grey-gray-4, #565656);
+  background: rgba(39, 39, 39, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  transform: translateX(100%);
+  transition: all 200ms ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sideMenuContainer.sideMenuContainerOpen {
+  transform: translateX(0);
+}
+
+.sideMenuContainerOpen {
+  transform: translateX(0);
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid var(--gray-4);
+}
+
+.closeMenuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: none;
+}
+
+.closeMenuButton:hover .closeIcon {
+  color: var(--primary);
+}
+
+.closeIcon {
+  font-size: 30px;
+  color: var(--text-color);
+  transition: all 200ms ease;
+}
+
+.menuContainerContent {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 20px;
+}
+
+.menuContainerContent::-webkit-scrollbar {
+  width: 3px;
+}
+
+.avatarContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 20px 0;
+  gap: 20px;
+  border-bottom: 1px solid var(--gray-5);
+}
+
+.trailerButton {
+  background: var(--normal);
+  border: none;
+  border-radius: 100px;
+  padding: 10px 10px 10px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  gap: 8px;
+  border: 1px solid var(--gray-3);
+  transition: all 200ms ease;
+}
+
+.trailerButton:hover {
+  background: var(--primary);
+}
+
+.trailerButtonIcon {
+  font-size: 19px;
+}
+
+.linksContainer {
+  padding: 20px 0;
+}
+
+.shopButton {
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 10px 20px 20px 10px;
+  background: var(--primary);
+  transform: skew(-20deg);
+  padding: 10px;
+  transition: all 400ms ease;
+}
+
+.shopButton * {
+  transform: skew(20deg);
+}
+
+.shopButton:hover {
+  background: var(--primary-400);
+}
+
+.links {
+  padding-top: 20px;
+}
+
+.navLinks {
+  font-family: var(--ternary-font);
+  font-weight: bold;
+  font-size: 25px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 400ms ease;
+}
+
+.navLinks:hover {
+  padding-left: 15px;
+}
+
+.active {
+  border-left: 5px solid var(--primary);
+  padding-left: 15px;
+}
+
+.navLinks.comingSoon {
+  color: var(--text-color-disabled);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.navFooter {
+  padding: 10px;
+  border-top: 1px solid var(--gray-4);
+}
+
+.socialsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.social {
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  transition: all 200ms ease;
+}
+
+.social:hover {
+  color: var(--primary);
+}
+
+.comingSoon {
+  cursor: initial;
+}
+
+.social.comingSoon:hover {
+  background-color: inherit;
+  color: inherit;
+}
+
+.authButton {
+  width: 100%;
+  border: none;
+  background: var(--gray-6);
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 300ms ease;
+}
+
+.logInButton {
+  margin-bottom: 10px;
+  background: var(--secondary);
+}
+
+.authButton:hover {
+  background: var(--primary);
+}
+
+@media (min-width: 501px) {
+  .logoContainer img {
+    width: 100px;
+  }
+
+  .sideMenuContainer {
+    width: initial;
+    min-width: 400px;
+  }
+}

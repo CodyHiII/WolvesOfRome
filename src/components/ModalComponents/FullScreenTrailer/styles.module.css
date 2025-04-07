@@ -1,0 +1,11 @@
+.video {
+  width: 90vw;
+  border: 10px solid var(--gray-6);
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .video {
+    width: 70vw;
+  }
+}

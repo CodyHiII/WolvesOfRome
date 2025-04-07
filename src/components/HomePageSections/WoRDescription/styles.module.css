@@ -1,0 +1,19 @@
+.cardContainer {
+  width: max-content;
+  padding: 10px;
+  background-color: var(--gray-6);
+  border: 1px solid var(--gray-3);
+  border-radius: 10px;
+}
+
+.icon {
+  color: var(--danger);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .cardContainer {
+    width: 100%;
+  }
+}

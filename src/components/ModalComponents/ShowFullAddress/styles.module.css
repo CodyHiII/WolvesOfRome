@@ -1,0 +1,16 @@
+.addressContainer {
+  width: 90%;
+  max-width: max-content;
+  background: var(--normal-hover);
+  border: 1px solid var(--gray-5);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 24px;
+  overflow-wrap: anywhere;
+}
+
+@supports not (overflow-wrap: anywhere) {
+  .addressContainer {
+    word-wrap: break-word;
+  }
+}

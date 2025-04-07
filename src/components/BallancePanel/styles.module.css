@@ -1,0 +1,57 @@
+.panelContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.gloriumIcon {
+  width: 22px;
+}
+
+.balanceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.buyButton {
+  position: relative;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 0 0 5px;
+  cursor: pointer;
+  background-color: none;
+  border-radius: 3px;
+  transform: skew(-10deg);
+  transition: all 400ms ease;
+}
+
+.buyButton:hover {
+  background: var(--gray-3);
+}
+
+.iconContainer {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: var(--text-color);
+  background: var(--primary);
+  border-radius: 3px;
+  transform: skew(-10deg);
+}
+
+.icon {
+  transform: skew(10deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

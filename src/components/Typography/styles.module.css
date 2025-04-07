@@ -1,0 +1,41 @@
+.default {
+  --font-size: 16px;
+  --line-height: 1.2;
+
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+.h0 {
+  --font-size: 76px;
+}
+.h1 {
+  --font-size: 61px;
+}
+.h2 {
+  --font-size: 49px;
+}
+.h3 {
+  --font-size: 39px;
+}
+.h4 {
+  --font-size: 31px;
+}
+.h5 {
+  --font-size: 25px;
+}
+.h6 {
+  --font-size: 20px;
+}
+.body-1 {
+  --font-size: 16px;
+}
+.body-2 {
+  --font-size: 13px;
+}
+.body-3 {
+  --font-size: 10px;
+}
+.body-4 {
+  --font-size: 8px;
+}

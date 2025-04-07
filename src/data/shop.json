@@ -1,0 +1,10 @@
+[
+  {
+    "itemId": "3",
+    "displayName": "Legendary Classic Card Pack",
+    "description": "A card pack featuring three empires: Wolves of Rome, Liches of Egypt, and Vampires of Carthage. It also includes a substantial collection of Neutral cards. This card pack features higher chances of acquiring Legendary cards",
+    "itemClass": "Pack",
+    "virtualCurrencyPrices": { "GT": 5000 },
+    "disabled": true
+  }
+]

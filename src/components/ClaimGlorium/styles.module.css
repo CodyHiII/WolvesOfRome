@@ -1,0 +1,91 @@
+.claimGloriumContainer {
+  margin-bottom: 30px;
+}
+
+.claimContainer {
+  padding: 30px 20px;
+  background-color: var(--normal);
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.claimableGlorium {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.claimableGlorium p {
+  font-size: 40px;
+  margin-bottom: -7px;
+}
+
+.gloriumDropText {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.claimButton {
+  margin: 25px auto 0 auto;
+}
+
+.gloriumStatsGrid {
+  margin-top: 30px;
+}
+
+.gloriumStatCard {
+  width: 100%;
+  border-radius: 10px;
+  background: var(--normal-hover);
+  padding: 10px 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+.gloriumStatCard:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.gloriumStatCard p {
+  flex: 1;
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  .claimGloriumContainer {
+    display: flex;
+    gap: 24px;
+  }
+
+  .claimContainer {
+    flex: 60%;
+    margin-bottom: 0;
+  }
+
+  .addressesCardContainer {
+    flex: 40%;
+  }
+
+  .claimableGlorium {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .claimContainer {
+    flex: 70%;
+  }
+
+  .addressesCardContainer {
+    flex: 30%;
+  }
+}

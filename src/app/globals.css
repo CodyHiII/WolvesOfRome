@@ -1,0 +1,151 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #ff7918;
+  --secondary: #6113cc;
+  --accent: #18ff79;
+  --accent2: #2f4858;
+
+  --success: #119711;
+  --danger: #e81b1b;
+  --success: #07bc0c;
+
+  --white: #ffffff;
+  --black: #000000;
+
+  --light: #f7f7f7;
+
+  --dark: #101010;
+  --dark-hover: #0c0c0c;
+  --dark-active: #050505;
+
+  --background: #212121;
+
+  --normal: #2e2e2e;
+  --normal-hover: #272727;
+  --normal-active: #222222;
+
+  --text-color: #ffffff;
+  --text-color-hover: #fbfbfb;
+  --text-color-active: #fafafa;
+  --text-color-2: #d2d2d2;
+  --text-color-3: #b4b4b4;
+  --text-color-disabled: #7e7e7e;
+
+  --gray-1: #a1a1a1;
+  --gray-2: #8e8e8e;
+  --gray-3: #777777;
+  --gray-4: #565656;
+  --gray-5: #3e3e3e;
+  --gray-6: #1b1b1b;
+
+  --transparent-gray: rgba(221, 221, 221, 0.3);
+
+  --primary-300: #ffa564;
+  --primary-400: #ff9446;
+
+  --rarity-collection: var(--primary);
+  --rarity-common: #949494;
+  --rarity-rare: #3154ff;
+  --rarity-epic: #ad38f2;
+  --rarity-legendary: #ff8617;
+  --rarity-divine: #e21c1c;
+  --rarity-token: #f5d833;
+
+  --rarity-bronze: linear-gradient(232deg, #e4ac55 -18.22%, #a4663a 69.39%),
+    #5d5f5a;
+  --rarity-silver: linear-gradient(
+    74deg,
+    #8e9eab 16.28%,
+    #d5dce0 61.65%,
+    #8e9eab 94.85%
+  );
+  --rarity-gold: linear-gradient(260deg, #ffe25a 4.46%, #ffa751 90.54%);
+
+  --modalBackgroundColor: #17171795;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--primary);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.col-margin {
+  margin: 12px 0;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--gray-6);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--gray-3);
+  border-radius: 100px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-4);
+}
+
+#tsparticles {
+  height: 100%;
+}
+
+@media (min-width: 1200px) {
+  .custom-xxl-20-1200 {
+    flex: 0 0 20%;
+  }
+}
+
+@media (min-width: 1580px) {
+  .custom-container {
+    max-width: 1500px;
+    padding: 0;
+  }
+
+  .custom-xxl-20 {
+    flex: 0 0 20%;
+  }
+}
+
+@media (min-width: 3680px) {
+  .custom-container {
+    max-width: 2000px;
+    padding: 0;
+  }
+}

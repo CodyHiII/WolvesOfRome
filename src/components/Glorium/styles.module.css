@@ -1,0 +1,11 @@
+.gloriumContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.gloriumContainer p {
+  line-height: 100%;
+  color: var(--primary);
+}

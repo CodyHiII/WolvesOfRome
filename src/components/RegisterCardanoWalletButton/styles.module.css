@@ -1,0 +1,45 @@
+.button {
+  border: none;
+  background: none;
+  padding: 20px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: var(--normal-hover);
+
+  transition: all 200ms ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.button:hover {
+  background: var(--normal-active);
+}
+
+.button img {
+  width: 40px;
+}
+
+.walletName {
+  text-transform: capitalize;
+}
+
+.buttonText {
+  font-family: var(--secondary-font);
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.error {
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--danger);
+  margin-top: 10px;
+}

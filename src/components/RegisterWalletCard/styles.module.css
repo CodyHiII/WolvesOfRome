@@ -1,0 +1,85 @@
+.card {
+  width: 100%;
+  height: 100%;
+  background: var(--normal);
+  border: 1px solid var(--primary);
+  border-radius: 20px;
+  padding: 30px 20px;
+  overflow-y: auto;
+}
+
+.walletsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.walletsHeader h1 {
+  font-size: 15px;
+  color: var(--text-color-2);
+}
+
+.registerWalletButton {
+  background: var(--primary);
+  color: var(--text-color);
+  padding: 5px 15px;
+  border: none;
+  border-radius: 10px;
+  transition: all 200ms ease;
+}
+
+.registerWalletButton:hover {
+  background: none;
+  color: var(--primary);
+  outline: 1px solid var(--primary);
+}
+
+.registerWalletsButtonsContainer {
+  position: absolute;
+  width: 90%;
+  max-width: 480px;
+  top: 50%;
+  left: 50%;
+  background-color: var(--normal);
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--gray-5);
+}
+
+.cardanoButton {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  background-color: var(--normal);
+  border: none;
+  border-radius: 0 0 15px 15px;
+  color: var(--text-color);
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.cardanoButton:hover {
+  background-color: var(--normal-hover);
+}
+
+.walletAddress:not(:last-child) {
+  margin-bottom: 10px;
+}

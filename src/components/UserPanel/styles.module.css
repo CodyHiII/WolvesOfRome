@@ -1,0 +1,32 @@
+.userPanelContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.userName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.seeProfileBtn {
+  border: none;
+  background: var(--primary);
+  padding: 5px 20px;
+  border-radius: 5px;
+  transform: skew(-15deg);
+  width: 100%;
+}
+
+.seeProfileBtn * {
+  transform: skew(15deg);
+}
+
+.seeProfileBtn.disabled {
+  background: var(--gray-4);
+  border: 1px solid var(--gray-3);
+  cursor: not-allowed;
+}

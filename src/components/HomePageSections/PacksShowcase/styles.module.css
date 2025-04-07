@@ -1,0 +1,223 @@
+.container {
+  width: 100%;
+  position: relative;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.bgContainer {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+.bgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bgContainer::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(33, 33, 33, 0.4) 33.34%,
+    #212121 100%
+  );
+}
+
+.cardContent {
+  padding: 0 20px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.iconContainer {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: var(--primary);
+  margin-bottom: 30px;
+}
+
+.circleContainer {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 50px auto;
+}
+
+.circleDecorationContainer {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+.circleDecoration {
+  width: 100%;
+  height: 100%;
+  animation: spin 60s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.circle {
+  width: 80%;
+  aspect-ratio: 1/1;
+  background: var(--gray-6);
+  border-radius: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.content {
+  margin-bottom: 30px;
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.tabContainer {
+  --_borderColor: var(--gray-4);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tabImgContainer {
+  width: 100px;
+  height: 100px;
+  background: var(--gray-6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid var(--_borderColor);
+  border-radius: 10px;
+}
+
+.typoContainer {
+  width: 150px;
+  height: 80px;
+  background: var(--_borderColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.tabContainer.active {
+  --_borderColor: var(--primary);
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 400px 20px 200px 20px;
+  }
+
+  .cardContent {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid var(--Grey-text-color-2, #d2d2d2);
+    background: rgba(33, 33, 33, 0.5);
+    backdrop-filter: blur(14px);
+  }
+
+  .content {
+    width: 100%;
+    flex: 3;
+    margin-top: -250px;
+  }
+
+  .heading {
+    flex: 1;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  .tabs {
+    flex: 1;
+    width: 100%;
+    width: initial;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .tabContainer {
+    --_borderColor: none;
+    flex-direction: row;
+  }
+
+  .typoContainer {
+    position: relative;
+    margin-top: 0;
+    border-radius: 0;
+    background: none;
+  }
+
+  .typoContainer::before {
+    content: '';
+    position: absolute;
+    width: calc(100% + 130px);
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0px;
+    background: var(--_borderColor);
+    border-radius: 50px 0px 0px 20px;
+    z-index: -1;
+  }
+
+  .tabImgContainer {
+    border: 5px solid var(--primary);
+  }
+}
